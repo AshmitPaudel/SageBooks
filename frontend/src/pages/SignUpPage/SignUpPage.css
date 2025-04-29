@@ -1,0 +1,127 @@
+.signup-page,
+.signup-page * {
+  box-sizing: border-box;
+}
+
+.signup-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 120vh;
+  min-height: 100vh;
+  background-color: #252525;
+  padding-bottom: 80px;
+}
+
+.signup-page .signup-form {
+  background-color: #252525;
+  padding: 80px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.signup-page h1 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.signup-page .heading-divider {
+  border: 1px solid lightgreen;
+  width: 50%;
+  margin: 5px auto 20px;
+}
+
+.signup-page .form-group {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.signup-page .label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.signup-page .input-field {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid lightgray;
+  border-radius: 30px;
+  background-color: #252525;
+  color: white;
+  outline: none;
+  transition: border 0.6s ease;
+}
+
+.signup-page .input-field::placeholder {
+  color: lightgray;
+}
+
+.signup-page .input-field:focus {
+  border-color: lightgreen;
+}
+
+.signup-page .signup-button {
+  width: 95%;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+}
+
+.signup-page .signup-button:hover {
+  transform: translateY(-3px);
+  transition: color 0.3s, transform 0.2s;
+  color: lightgreen;
+}
+.signup-button:hover:active {
+  transform: scale(0.95);
+}
+
+
+.signup-page .signin-link {
+  margin-top: 10px;
+  color: white;
+}
+
+.signup-page .signin-link .link {
+  color: lightgreen;
+  text-decoration: none;
+  font-weight: bold;
+  opacity: 1;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.signup-page .signin-link .link:hover {
+  opacity: 1;
+  transform: scale(1.04);
+  display: inline-block;
+  color: green;
+}
+
+/* Error Message */
+.signup-page .error-message {
+  color: salmon;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.signup-page .input-error {
+  border: 1px solid #ff474d;
+  box-shadow: 0 0 5px #ff474d;
+}
+
+.signup-page .input-error:focus {
+  border-color: #ff474d;
+  box-shadow: 0 0 5px #ff474d;
+}

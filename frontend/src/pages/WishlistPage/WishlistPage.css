@@ -1,0 +1,134 @@
+.wishlist-page {
+  background-color: #252525;
+  color: white;
+  padding: 20px;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+/* Wishlist Heading */
+.wishlist-page .wishlist-heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+/* Table */
+.wishlist-page .wishlist-table {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 0px;
+  border-collapse: collapse;
+}
+
+/* Table Header and Data */
+.wishlist-page .wishlist-table th,
+.wishlist-page .wishlist-table td {
+  padding: 20px;
+  text-align: left;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.wishlist-page .wishlist-table th {
+  font-weight: bold;
+}
+
+.wishlist-page .wishlist-table td {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Table Row Hover Effect */
+.wishlist-page .wishlist-table tr:hover {
+  background-color: transparent;
+}
+
+/* Product Info */
+.wishlist-page .product-info-cell {
+  display: flex;
+  align-items: center;
+}
+
+.wishlist-page .product-info {
+  display: flex;
+  align-items: center;
+}
+
+.wishlist-page .cover-image {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.wishlist-page .product-name {
+  color: white;
+  font-size: 16px;
+}
+
+/* Delete Button */
+.wishlist-page .delete-cell {
+  text-align: center;
+}
+
+.wishlist-page .delete-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.wishlist-page .delete-button:hover {
+  color: red;
+  transform: scale(1.1);
+}
+
+.wishlist-page .add-to-cart-button {
+  background: none;
+  color: lightgreen;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.wishlist-page .add-to-cart-button:hover {
+  color: green;
+  transform: scale(1.05);
+}
+
+.wishlist-page .empty-wishlist {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  text-align: center;
+}
+
+.wishlist-page .continue-shopping-button {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.wishlist-page .continue-shopping-button:hover {
+  color: lightgreen;
+}
+

@@ -1,0 +1,85 @@
+.manage-users-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #252525;
+}
+
+.users-dashboard {
+  display: flex;
+  width: 80%;
+  height: 600px;
+}
+
+.manage-users-content {
+  flex: 1;
+  padding: 40px;
+  background-color: #333;
+  border-radius: 0 10px 10px 0;
+  overflow-y: auto;
+}
+
+.manage-users-heading {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Table */
+.manage-users-page .users-table {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 0px;
+  border-collapse: collapse;
+}
+
+.manage-users-page .users-table th,
+.manage-users-page .users-table td {
+  padding: 20px;
+  text-align: left;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.manage-users-page .users-table th {
+  font-weight: bold;
+}
+
+.manage-users-page .users-table td {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.manage-users-page .users-table tr:hover {
+  background-color: transparent;
+}
+
+.manage-users-page .delete-cell {
+  text-align: center;
+}
+
+.manage-users-page .delete-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.manage-users-page .delete-button:hover {
+  color: red;
+  transform: scale(1.1);
+}
+
+/* Empty State Message */
+.manage-users-page .empty-users {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  text-align: center;
+}

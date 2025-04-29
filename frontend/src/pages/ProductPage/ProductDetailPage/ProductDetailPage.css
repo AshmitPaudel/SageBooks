@@ -1,0 +1,286 @@
+.product-detail-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+  background-color: #252525;
+  color: white;
+}
+
+.main-container {
+  display: flex;
+  width: 95%;
+  height: 700px;
+  background-color: #2c2c2c;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.product-details-container {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.secondary-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 400px 40px auto;
+  gap: 0px;
+  justify-items: center;
+  align-items: start;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  position: relative;
+}
+
+.product-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444;
+  border-radius: 10px;
+  width: 100%;
+  height: 400px;
+}
+
+.wishlist-container {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: flex;
+}
+
+.book-details-container {
+  margin-top: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #333;
+  border-radius: 8px;
+  border: 1px solid white;
+  width: 80%;
+  color: white;
+}
+
+.wishlist-icon {
+  width: 20px;
+  height: 20px;
+}
+.product-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  cursor: zoom-in;
+}
+
+.fallback-text {
+  color: lightgray;
+  font-size: 16px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.product-image-section .fallback-text {
+  display: block;
+}
+
+.product-info-section {
+  flex: 2;
+  margin-left: 20px;
+}
+
+.product-stock {
+  margin-bottom: 10px;
+}
+
+.product-description {
+  margin-top: 20px;
+}
+
+.product-description h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #f1f1f1;
+}
+
+.description-text {
+  height: 200px;
+  color: #dcdcdc;
+  line-height: 1.5;
+  padding-right: 10px;
+  overflow-y: auto;
+}
+
+.description-text::-webkit-scrollbar {
+  width: 10px;
+}
+
+.description-text::-webkit-scrollbar-track {
+  background: #333;
+  border-radius: 10px;
+}
+
+.stock-description-divider {
+  border: 0;
+  border-top: 1px solid #888;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.description-divider {
+  border: 0;
+  border-top: 1px solid #888;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.product-detail-page .quantity-selector {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.product-detail-page .quantity-btn {
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.quantity-input {
+  font-size: 16px;
+  color: white;
+  background-color: #555;
+  border: 2px solid #888;
+  padding: 5px 10px;
+  width: 60px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.quantity-input:focus {
+  outline: none;
+  border: 2px solid #90ee90;
+}
+
+.action-btn {
+  padding: 15px;
+  background-color: #111;
+  width: 15%;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover,
+.buy-now-btn:hover {
+  background-color: #000;
+  transform: scale(1.02);
+  transition: color 0.3s, transform 0.2s;
+  color: lightgreen;
+}
+
+.add-to-cart-btn:hover:active,
+.buy-now-btn:hover:active {
+  transform: scale(0.95);
+}
+
+.product-price {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: salmon;
+}
+
+.purchase-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.quantity-selector .quantity-input {
+  width: 60px;
+  text-align: center;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.book-details {
+  margin-top: 10px;
+  padding: 10px;
+  background: #222;
+  border-radius: 8px;
+  color: white;
+  text-align: left;
+}
+
+.book-details h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.book-details-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.book-details-table th {
+  text-align: left;
+  padding: 5px;
+  font-weight: bold;
+  color: #ddd;
+}
+
+.book-details-table td {
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+}
+
+.book-details-table tr {
+  border-bottom: 1px solid #444;
+}
+
+.review-count {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.product-detail-page .wishlist-icon {
+  padding-top: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.wishlist-icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.wishlist-icon:active {
+  transform: scale(0.96);
+  transition: transform 0.05s ease-in;
+}

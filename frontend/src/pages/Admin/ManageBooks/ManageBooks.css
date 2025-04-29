@@ -1,0 +1,128 @@
+.manage-books-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #252525;
+}
+
+.books-dashboard {
+  display: flex;
+  width: 80%;
+  height: 600px;
+}
+
+.manage-books-content {
+  flex: 1;
+  padding: 40px;
+  background-color: #333;
+  border-radius: 0 10px 10px 0;
+  overflow-y: auto;
+  max-height: calc(100vh - 80px);
+}
+
+.manage-books-heading,
+.book-list-heading {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.manage-books-page .books-table {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-collapse: collapse;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.manage-books-page .books-table th,
+.manage-books-page .books-table td {
+  padding: 20px;
+  text-align: left;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.manage-books-page .books-table th {
+  font-weight: bold;
+}
+
+.manage-books-page .books-table td {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.manage-books-page .books-table tr:hover {
+  background-color: transparent;
+}
+
+.edit-button,
+.manage-books-page .delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.add-button {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.edit-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.add-icon,
+.edit-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.add-icon {
+  margin-right: 8px;
+}
+
+.add-icon:hover,
+.edit-icon:hover {
+  transform: scale(1.04);
+  transition: color 0.3s, transform 0.2s;
+}
+
+/* Delete Button Styling */
+.manage-books-page .delete-button {
+  color: white;
+  font-size: 24px;
+  margin-left: 10px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.manage-books-page .delete-button:hover {
+  color: red;
+  transform: scale(1.02);
+  transition: color 0.3s, transform 0.2s;
+}
+
+.manage-books-page .delete-cell,
+.manage-books-page .action-cell {
+  text-align: center;
+}
+
+.manage-books-page .empty-books {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  text-align: center;
+}

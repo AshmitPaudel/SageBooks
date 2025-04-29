@@ -1,0 +1,105 @@
+.rating-review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 140vh;
+  box-sizing: border-box;
+  color: white;
+}
+
+.ratings-and-review-container-1 {
+  width: 95%;
+  height: 800px;
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.ratings-and-review-container {
+  display: flex;
+  justify-content: center;
+  width: 1300px;
+  height: 600px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.ratings-and-review-container-1 h2 {
+  color: white;
+  text-align: center;
+}
+
+.see-review-container {
+  width: 100%;
+  padding: 20px;
+  background: #3c3c3c;
+  border-radius: 8px;
+}
+
+.see-review-container h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.rating-display {
+  display: flex;
+  align-items: center;
+}
+
+.overall-rating {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.reviews-list {
+  height: 420px;
+  overflow-y: auto;
+}
+
+.ratings-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ratings-header h3,
+.ratings-header p {
+  margin: 0;
+}
+
+.ratings-header p {
+  font-size: 16px;
+}
+
+.reviews-list .review-item .user-name {
+  font-size: 14px;
+}
+
+.reviews-list .review-item .user-comment {
+  font-size: 16px;
+}
+
+.reviews-list .review-item .review-date {
+  font-size: 12px;
+}
+.reviews-list .review-item .user-email {
+  font-size: 14px;
+}
+
+.rating-review .error-text {
+  color: salmon;
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.reviews-list .review-item .user-comment,
+.no-reviews {
+  font-size: 16px;
+  color: #ddd;
+  font-style: italic;
+}

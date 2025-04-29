@@ -1,0 +1,351 @@
+.home-page {
+  background-color: #252525;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.home-page .heading-container {
+  width: 100%;
+}
+
+.home-page .banner {
+  width: 95%;
+  height: 400px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.home-page .banner-slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.banner-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*  Main Container */
+.hp-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  background-color: #2c2c2c;
+  row-gap: 20px;
+  flex-grow: 1;
+  padding-bottom: 100px;
+}
+
+.genres h2,
+.new-arrivals h2,
+.popular-authors h2,
+.top-publishers h2,
+.books-you-might-like h2,
+.what-we-offer h2,
+.best-sellers h2 {
+  font-size: 25px;
+  color: white;
+}
+
+/* Genres Section*/
+.home-page .genres {
+  width: 90%;
+  padding: 20px 0;
+}
+
+.home-page .genre-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  text-decoration: none;
+  text-align: center;
+  margin: 20px 0 20px 50px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+}
+
+.home-page .genre-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.15);
+}
+
+.genre-item img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+}
+
+.genre-item p {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* Explore Section */
+.home-page .explore {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: #2c2c2c;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+}
+
+.explore h2 {
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.explore-top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.explore-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore-buttons button,
+.home-page .explore-all-btn {
+  background-color: #111;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: auto;
+  max-width: 200px;
+}
+
+.explore-buttons button:hover,
+.home-page .explore-all-btn:hover {
+  color: #90ee90;
+  transform: scale(1.02);
+  transition: color 0.3s, transform 0.2s;
+  background-color: #000;
+}
+
+.explore-buttons button:active,
+.home-page .explore-all-btn:active {
+  transform: scale(0.95);
+}
+
+.explore-all-btn {
+  margin: 15px auto;
+  display: block;
+  border-radius: 50px;
+}
+
+.explore-bottom-container {
+  width: 100%;
+}
+
+.explore-divider {
+  width: 80%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 15px 0;
+  opacity: 0.8;
+  border: none;
+}
+
+/* Popular Authors*/
+.home-page .popular-authors {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+}
+
+.popular-authors-items-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.author-item {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.author-item:hover {
+  transform: scale(1.02);
+}
+
+.author-item img {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-item p {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Top Publishers */
+.home-page .top-publishers {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  border-radius: 12px;
+}
+
+.top-publishers-items-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-left: 25px;
+}
+
+.publisher-item {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 20px 0;
+  border-radius: 12px;
+  width: 220px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.publisher-item:hover {
+  transform: scale(1.02);
+}
+
+.publisher-item img {
+  height: 120px;
+  width: 120px;
+}
+
+.publisher-item p {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* What We Offer*/
+.home-page .what-we-offer {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.what-we-offer-items-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.offer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #252525;
+  padding: 25px;
+  border-radius: 12px;
+  width: 220px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.offer-item:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 12px rgba(255, 255, 255, 0.15);
+}
+
+.offer-item img {
+  height: 40px;
+  width: auto;
+}
+
+.offer-item p {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*  Book Display Section */
+.image-container-1 {
+  border-radius: 10px;
+  width: 260px;
+  margin-left: 25px;
+  transition: transform 0.2s;
+  display: block;
+  text-decoration: none;
+}
+
+.image-container-1:hover {
+  transform: scale(1.01);
+}
+
+.image-container-1 img {
+  width: 100%;
+  height: 360px;
+  border-radius: 8px;
+}
+
+.book-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.book-name,
+.book-author {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.book-price {
+  font-size: 18px;
+  color: salmon;
+  font-weight: bold;
+}

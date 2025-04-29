@@ -1,0 +1,29 @@
+.footer {
+  background-color: black;
+  color: #ddd;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: auto;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #aaa;
+}
+
+.footer p:hover {
+  color: #fff;
+  cursor: pointer;
+}

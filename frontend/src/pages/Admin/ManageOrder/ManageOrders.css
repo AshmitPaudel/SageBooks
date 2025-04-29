@@ -1,0 +1,111 @@
+
+.manage-orders-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #252525;
+}
+
+.orders-dashboard {
+  display: flex;
+  width: 80%;
+  height: 600px;
+}
+
+.manage-orders-content {
+  overflow-y: auto;
+  flex: 1;
+  padding: 40px;
+  background-color: #333;
+  border-radius: 0 10px 10px 0;
+}
+
+.manage-orders-heading {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Table */
+.manage-orders-page .orders-table {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 0px;
+  border-collapse: collapse;
+}
+
+/* Table Header and Data */
+.manage-orders-page .orders-table th,
+.manage-orders-page .orders-table td {
+  padding: 20px;
+  text-align: left;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.manage-orders-page .orders-table th {
+  font-weight: bold;
+}
+
+.manage-orders-page .orders-table td {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Table Row Hover Effect */
+.manage-orders-page .orders-table tr:hover {
+  background-color: transparent;
+}
+
+/* Action Buttons */
+.manage-orders-page .cancel-button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background 0.2s ease;
+}
+
+.manage-orders-page .cancel-button:hover {
+  background: darkred;
+}
+
+.manage-orders-page .status-button {
+  background: lightgreen;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.manage-orders-page .status-button:hover {
+  background: green;
+}
+
+/* Empty State Message */
+.manage-orders-page .empty-orders {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  text-align: center;
+}
+/* Status Dropdown */
+.status-dropdown {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+}
+
+.status-dropdown:hover {
+  background-color: #555;
+}

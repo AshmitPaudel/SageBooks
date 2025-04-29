@@ -1,0 +1,110 @@
+.review-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.review {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Leave Review Container */
+.review .leave-review-container {
+  padding: 40px;
+  width: 100%;
+  width: 600px;
+  height: auto;
+  background: #2c2c2c;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.review .leave-review-container h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.review .rating-input,
+.review .review-input {
+  margin-bottom: 20px;
+}
+
+.review .rating-input label,
+.review .review-input label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.review .review-input textarea {
+  width: 100%;
+  min-height: 150px;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  background: #333;
+  border: 1px solid white;
+  resize: none;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.review .review-input textarea:focus {
+  border-color: lightgreen;
+  outline: none;
+}
+
+.review .review-input textarea.error {
+  border: 1px solid #f44336;
+}
+
+.review .review-input textarea.error:focus {
+  border-color: #ff474d;
+  box-shadow: 0 0 5px #ff474d;
+}
+
+.review .error-text {
+  color: salmon;
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.review .review-submit {
+  background: #111;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  transition: color 0.3s ease;
+}
+
+.review .review-submit:hover {
+  transform: scale(1.02);
+  transition: color 0.3s, transform 0.2s;
+  color: lightgreen;
+  background-color: #000;
+}
+
+.MuiRating-icon {
+  font-size: 1.5rem;
+}

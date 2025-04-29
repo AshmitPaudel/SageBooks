@@ -1,0 +1,158 @@
+.book-update-container {
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+.book-update-content {
+  width: 600px;
+  max-height: 80vh;
+  background: #252525;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  color: white;
+  overflow-y: auto;
+}
+
+.book-update-heading {
+  margin-bottom: 20px;
+}
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.book-form label {
+  font-weight: bold;
+  width: 150px;
+  margin-bottom: 5px;
+}
+
+.book-form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.book-form input,
+.book-form select {
+  width: 80%;
+  height: 50px;
+  margin-top: 4px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  background: #333;
+  padding: 0 10px;
+  color: #999;
+  transition: border-color 0.3s;
+}
+
+.book-form input:focus,
+.book-form select:focus {
+  border-color: lightgreen;
+  outline: none;
+}
+
+.book-form select {
+  width: 84%;
+}
+
+.book-form input[type="file"] {
+  width: 40%;
+  height: 40px;
+  padding: 8px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  background: #333;
+  cursor: pointer;
+}
+
+.book-form input[type="file"]::-webkit-file-upload-button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.book-form input[type="file"]::-webkit-file-upload-button:hover {
+  color: lightgreen;
+}
+
+.book-form .file-input {
+  display: none;
+}
+
+.book-form .file-upload-container {
+  display: flex;
+  align-items: center;
+}
+
+.book-form .image-preview {
+  margin-left: 10px;
+}
+
+.book-form .cover-image {
+  width: 60px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.book-form .close-button,
+.book-form .submit-button,
+.book-form .clear-button {
+  background: black;
+  color: white;
+  height: 40px;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.book-form .close-button {
+  width: 100px;
+  margin-top: 20px;
+}
+
+.book-form .submit-button {
+  width: 150px;
+}
+
+.book-form .clear-button {
+  width: 100px;
+}
+
+.book-form .close-button:hover,
+.book-form .submit-button:hover,
+.book-form .clear-button:hover {
+  color: lightgreen;
+}
+
+/* Error Message */
+.book-update-content .error-message {
+  color: salmon;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.book-update-content .input-error {
+  border: 1px solid #ff474d;
+  box-shadow: 0 0 5px #ff474d;
+}
+
+.book-update-content .input-error:focus {
+  border-color: #ff474d;
+  box-shadow: 0 0 5px #ff474d;
+}

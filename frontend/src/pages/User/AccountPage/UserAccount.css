@@ -1,0 +1,141 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 140vh;
+  background-color: #252525;
+  color: white;
+  padding: 40px;
+}
+
+.account-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.account-wrapper {
+  display: flex;
+  gap: 60px;
+  background: #2c2c2c;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.profile-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #222;
+  border: 2px solid white;
+  transition: 0.3s ease-in-out;
+}
+
+.profile-image:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.choose-photo {
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.choose-photo:hover {
+  background-color: #555;
+  transform: scale(1.02);
+}
+
+.hidden-file-input {
+  display: none;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ddd;
+}
+
+.input-field {
+  width: 80%;
+  padding: 20px;
+  border: 1px solid #555;
+  background: #444;
+  color: white;
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.save-button {
+  background-color: #111;
+  width: 140px;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.save-button:hover {
+  color: lightgreen;
+  transform: scale(1.02);
+  transition: color 0.3s, transform 0.2s;
+  background-color: #000;
+}
+
+.save-button:active {
+  transform: scale(0.95);
+}
+
+.input-field:focus {
+  border-color: lightgreen;
+  transform: scale(1.02);
+}
+
+.profile-container .input-field.error {
+  border: 1px solid #f44336;
+}
+
+.profile-container .error-message {
+  color: salmon;
+}
+
+.profile-container .input-field.error:focus {
+  border-color: #ff474d;
+  box-shadow: 0 0 5px #ff474d;
+}
