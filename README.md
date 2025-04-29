@@ -10,42 +10,43 @@ SageBooks is an online bookstore built with Django and React. It offers a compre
 
 ## **To set it up locally, follow the steps below:**
 
-1. Clone the Repository:
+- Clone the Repository:
 git clone https://github.com/AshmitPaudel/SageBooks.git
 
-**Backend Setup: **
-2. Set up a Virtual Environment:
+## Backend Setup:
+- Set up a Virtual Environment:
 
-  2.1 Navigate to the backend directory:
+- Navigate to the backend directory:
   cd backend
 
-2.2. Create and activate a virtual environment:
+- Create and activate a virtual environment:
+  
  • Windows:
-    python -m venv venv
-    .\venv\Scripts\activate
+  python -m venv venv
+  .\venv\Scripts\activate
   
   • macOS/Linux:
     python3 -m venv venv
     source venv/bin/activate
 
-  2.3. Install  Dependencies:
-    pip install -r requirements.txt
+- Install  Dependencies:
+  pip install -r requirements.txt
 
-  2.4. Make Migrations:
-    python manage.py migrate
+- Make Migrations:
+  python manage.py migrate
 
-  2.5. Run the Backend Server:
-    python manage.py runserver
+- Run the Backend Server:
+  python manage.py runserver
 
 
-**Frontend Setup: **
-1. Navigate to Frontend Directory:
+## Frontend Setup
+- Navigate to Frontend Directory:
   cd /frontend
 
-2. Install Frontend Dependencies:
+- Install Frontend Dependencies:
   npm install
 
-3.  Start the frontend server:
+- Start the frontend server:
   npm start
 
 
