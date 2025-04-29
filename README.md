@@ -21,13 +21,13 @@ git clone https://github.com/AshmitPaudel/SageBooks.git
 
 - Create and activate a virtual environment:
   
- • Windows:
-  python -m venv venv
-  .\venv\Scripts\activate
-  
-  • macOS/Linux:
-    python3 -m venv venv
-    source venv/bin/activate
+   • Windows:
+    python -m venv venv
+    .\venv\Scripts\activate
+    
+    • macOS/Linux:
+      python3 -m venv venv
+      source venv/bin/activate
 
 - Install  Dependencies:
   pip install -r requirements.txt
