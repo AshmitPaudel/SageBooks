@@ -17,10 +17,10 @@ git clone https://github.com/AshmitPaudel/SageBooks.git
 2. Set up a Virtual Environment:
 
   2.1 Navigate to the backend directory:
-    cd backend
+  cd backend
 
 2.2. Create and activate a virtual environment:
-  • Windows:
+ • Windows:
     python -m venv venv
     .\venv\Scripts\activate
   
@@ -39,14 +39,18 @@ git clone https://github.com/AshmitPaudel/SageBooks.git
 
 
 **Frontend Setup: **
-7. Navigate to Frontend Directory:
+1. Navigate to Frontend Directory:
   cd /frontend
 
-8. Install Frontend Dependencies:
+2. Install Frontend Dependencies:
   npm install
 
-9.  Start the frontend server:
+3.  Start the frontend server:
   npm start
+
+
+
+
 
 
 
