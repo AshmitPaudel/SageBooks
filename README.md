@@ -1,20 +1,19 @@
-Welcome To Sage Books 
+# Welcome to SageBooks
 SageBooks is an online bookstore built with Django and React. It offers a comprehensive catalog of books, user authentication, order management, reviews, and more—offering a seamless and interactive user experience.
 
-Prerequisites:
- • Ensure you have the following installed:
- • Git – for cloning the repository
- • Python – for the Django backend
- • Node.js & npm – for the React frontend
- • PostgreSQL – for databse 
- • pgAdmin (optional) – GUI for managing PostgreSQL
- 
-To set it up locally, Follow the steps below:
+## **Prerequisites:**
+- Git – for cloning the repository
+- Python – for the Django backend
+- Node.js & npm – for the React frontend
+- PostgreSQL – for the database 
+- pgAdmin (optional) – GUI for managing PostgreSQL
+
+## **To set it up locally, follow the steps below:**
 
 1. Clone the Repository:
 git clone https://github.com/AshmitPaudel/SageBooks.git
 
-Backend Setup: 
+**Backend Setup: **
 2. Set up a Virtual Environment:
 
   2.1 Navigate to the backend directory:
@@ -39,8 +38,7 @@ Backend Setup:
     python manage.py runserver
 
 
-
-Froned Setup: 
+**Frontend Setup: **
 7. Navigate to Frontend Directory:
   cd /frontend
 
